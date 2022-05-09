@@ -1,10 +1,10 @@
 FROM xataz/nginx-php
 
-MAINTAINER hydrog3n <contact@loicvaille.ovh>
+MAINTAINER rzwt
 
-ARG VERSION_SHAARLI=0.9.1
-ARG VERSION_MATERIAL=0.9.0
-ARG VERSION_SHAARLI2TWITTER=1.3.0
+ARG VERSION_SHAARLI=0.12.1
+ARG VERSION_MATERIAL=0.12.1
+ARG VERSION_SHAARLI2TWITTER=2.2.0
 
 RUN cd /tmp \
     && wget https://github.com/shaarli/Shaarli/releases/download/v${VERSION_SHAARLI}/shaarli-v${VERSION_SHAARLI}-full.tar.gz \
